@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"makefile.makefilePath": "makefile",
+		"files.associations": {
+			"array": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp",
+			"*.tcc": "cpp"
+		}
+	}
+}
