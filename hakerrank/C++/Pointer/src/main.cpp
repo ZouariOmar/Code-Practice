@@ -3,9 +3,9 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      2024-06-06
+ * @date      2024-07-22
  * @copyright Copyright (c) 2024
- * @link      https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1?page=1&sortBy=submissions
+ * @link      https://www.hackerrank.com/challenges/c-tutorial-pointer/problem?isFullScreen=true
  ***************************************************/
 
 //? ------------------------------ INCLUDE PROTOTYPE DECLARATION PART ------------------------------
@@ -14,12 +14,14 @@
 //? --------------------------------- MAIN() INT FUNCTION DEV PART ---------------------------------
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
-  Solution sl;
-  vector<long long> arr = {3, 1, 1, 2, 3, 2};
-  vector<int> res = sl.duplicates(arr);
+  int a, b;
+  int *pa = &a, *pb = &b;
 
-  for (int it : res)
-    cout << it << " ";
+  scanf("%d %d", &a, &b);
+  update(pa, pb);
+  printf("%d\n%d", a, b);
+
+  return 0;
 
   return 0;
 }

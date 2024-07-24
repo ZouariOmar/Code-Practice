@@ -1,25 +1,30 @@
-/***************************************************
+/*****************************************************************************
  * @file      main.cpp
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      2024-06-06
+ * @date      24-07-2024
+ * @link      https://www.codewars.com/kata/5262119038c0985a5b00029f/train/cpp
  * @copyright Copyright (c) 2024
- * @link      https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1?page=1&sortBy=submissions
- ***************************************************/
+ *****************************************************************************/
 
 //? ------------------------------ INCLUDE PROTOTYPE DECLARATION PART ------------------------------
 #include "lib.cpp"
 
 //? --------------------------------- MAIN() INT FUNCTION DEV PART ---------------------------------
+
+/**
+ * @brief # The Main Program Function
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
-  Solution sl;
-  vector<long long> arr = {3, 1, 1, 2, 3, 2};
-  vector<int> res = sl.duplicates(arr);
+  // her...
 
-  for (int it : res)
-    cout << it << " ";
+  std::cout << isPrime(3) << std::endl;
 
   return 0;
 }

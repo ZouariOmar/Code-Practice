@@ -14,29 +14,24 @@
 //? --------------------------------- FUNCTIONS PROTOTYPE DEV PART ---------------------------------
 
 /**
- * @brief
+ * @brief Find all the elements occurring more than once in the given array
  *
  * @param arr
  * @return vector<int>
  */
 vector<int> Solution::duplicates(vector<long long> arr) {
-  vector<int> ans;
+  // Sorting the array
+  sort(arr.begin(), arr.end());
 
-  int i = 0;
-  while (i < arr.size()) {
-    for (int j = 0; j < arr.size(); j++) {
-      if (arr[i] == arr[j] && i != j) {
-        ans.push_back(arr[i]);
-        arr.erase(arr.begin() + j);
-      }
-    }
-    i++;
-  }
-
-  if (ans.empty())
+  // Finding duplicates
+  vector<int> res;
+  size_t len = arr.size() - 1;
+  for (int i = 0; i < len; i++)
+    if (arr[i] == arr[i + 1])
+      res.push_back(arr[i]);
+  
+  if (res.empty())
     return {-1};
-  else {
-    sort(ans.begin(), ans.end());
-    return ans;
-  }
+
+  return res;
 }

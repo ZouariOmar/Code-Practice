@@ -1,25 +1,31 @@
-/***************************************************
+/*****************************************************************************
  * @file      main.cpp
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      2024-06-06
+ * @date      24-07-2024
+ * @link      https://leetcode.com/problems/three-consecutive-odds
  * @copyright Copyright (c) 2024
- * @link      https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1?page=1&sortBy=submissions
- ***************************************************/
+ *****************************************************************************/
 
 //? ------------------------------ INCLUDE PROTOTYPE DECLARATION PART ------------------------------
 #include "lib.cpp"
 
 //? --------------------------------- MAIN() INT FUNCTION DEV PART ---------------------------------
+
+/**
+ * @brief # The Main Program Function
+ *
+ * @param argc
+ * @param argv
+ * @return int
+ */
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
   Solution sl;
-  vector<long long> arr = {3, 1, 1, 2, 3, 2};
-  vector<int> res = sl.duplicates(arr);
+  vector<int> arr = {2, 6, 4, 1};
 
-  for (int it : res)
-    cout << it << " ";
+  cout << sl.threeConsecutiveOdds(arr) << endl;
 
   return 0;
 }
