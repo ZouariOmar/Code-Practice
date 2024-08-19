@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      02-08-2024
+ * @link      https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/cpp
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -15,20 +15,16 @@
 
 /**
  * @brief # The Main Program Function
- * 
- * @param argc 
- * @param argv 
- * @return int 
+ *
+ * @param argc
+ * @param argv
+ * @return int
  */
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
-  Transform tr;
+  vector<int> arr = {-10, -9, -8, -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20};
 
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
+  cout << range_extraction(arr) << endl;
 
   return 0;
 }

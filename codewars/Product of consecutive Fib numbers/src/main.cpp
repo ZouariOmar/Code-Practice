@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      31-07-2024
+ * @link      https://www.codewars.com/kata/5541f58a944b85ce6d00006a/train/cpp
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -22,13 +22,11 @@
  */
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
-  Transform tr;
+  ProdFib fb;
+  vector<ull> res = fb.productFib(800);
 
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
+  for (ull it : res)
+    cout << it << " ";
 
   return 0;
 }

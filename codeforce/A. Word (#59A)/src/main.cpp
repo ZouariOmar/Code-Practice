@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      19-08-2024
+ * @link      https://codeforces.com/problemset/problem/59/A
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -14,21 +14,14 @@
 //? --------------------------------- MAIN() INT FUNCTION DEV PART ---------------------------------
 
 /**
- * @brief # The Main Program Function
- * 
- * @param argc 
- * @param argv 
+ * @brief # The Main Program Function 
  * @return int 
  */
-int main(int argc, char const *argv[]) {
+int main() {
   //* principal vars declaration part
-  Transform tr;
+  Solution sl;
 
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
+  sl.to_case();
 
   return 0;
 }

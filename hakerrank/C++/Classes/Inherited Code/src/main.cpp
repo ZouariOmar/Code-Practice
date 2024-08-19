@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      dd-mm-yyyy
+ * @link      NONE
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -21,14 +21,21 @@
  * @return int 
  */
 int main(int argc, char const *argv[]) {
-  //* principal vars declaration part
-  Transform tr;
-
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
-
+  int T;
+  cin >> T;
+  while (T--) {
+    string username;
+    cin >> username;
+    try {
+      bool isValid = checkUsername(username);
+      if (isValid) {
+        cout << "Valid" << '\n';
+      } else {
+        cout << "Invalid" << '\n';
+      }
+    } catch (BadLengthException e) {
+      cout << "Too short: " << e.what() << '\n';
+    }
+  }
   return 0;
 }

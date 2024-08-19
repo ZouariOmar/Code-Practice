@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      11-08-2024
+ * @link      https://leetcode.com/problems/kth-distinct-string-in-an-array
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -15,20 +15,15 @@
 
 /**
  * @brief # The Main Program Function
- * 
- * @param argc 
- * @param argv 
- * @return int 
+ * @return int
  */
-int main(int argc, char const *argv[]) {
+int main() {
   //* principal vars declaration part
-  Transform tr;
+  Solution sl;
+  vector<string> arr = {"aaa", "aa", "a"};
 
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
+  cout
+      << sl.kthDistinct(arr, 1) << endl;
 
   return 0;
 }

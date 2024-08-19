@@ -1,34 +1,29 @@
 /*****************************************************************************
- * @file      main.cpp
+ * @file      test.cpp
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      16-08-2024
+ * @link      https://www.hackerearth.com/problem/algorithm/prime-query-bbe5751b/?source=list_view
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
 //? ------------------------------ INCLUDE PROTOTYPE DECLARATION PART ------------------------------
-#include "lib.cpp"
+#include <gtest/gtest.h>
+
+#include "../src/lib.cpp"
 
 //? --------------------------------- MAIN() INT FUNCTION DEV PART ---------------------------------
 
-/**
- * @brief # The Main Program Function
- * 
- * @param argc 
- * @param argv 
- * @return int 
- */
-int main(int argc, char const *argv[]) {
-  //* principal vars declaration part
-  Transform tr;
+int main(int argc, char **argv) {
+  testing::InitGoogleTest(&argc, argv);
 
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
+  return RUN_ALL_TESTS();
+}
 
-  return 0;
+TEST(Test01, PrincipalTest) {
+  Solution sl;
+  ostringstream out;
+  sl.queries(out);
+  EXPECT_EQ(out.str(), "2\n9\n");
 }

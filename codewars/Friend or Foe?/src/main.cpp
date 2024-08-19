@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      08-08-2024
+ * @link      https://www.codewars.com/kata/55b42574ff091733d900002f/train/cpp
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -22,13 +22,11 @@
  */
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
-  Transform tr;
+  std::vector<std::string> arr = {""};
 
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
+  std::vector<std::string> res = friendOrFoe(arr);
+  for (std::string it : res)
+    std::cout << it << " ";
 
   return 0;
 }

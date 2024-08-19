@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      30-07-2024
- * @link      https://www.codewars.com/kata/546f922b54af40e1e90001da/train/cpp
+ * @date      dd-mm-yyyy
+ * @link      NONE
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -21,14 +21,22 @@
  * @return int 
  */
 int main(int argc, char const *argv[]) {
-  //* principal vars declaration part
-  Transform tr;
+  int T;
+  cin >> T;
+  while (T--) {
+    long long A, B;
+    cin >> A >> B;
 
-  // Print the new string
-  cout << tr.to_alpha_pos() << endl;
-  
-  for (int i = 0; i < 10; i++)
-    cout << "test ";
-
+    try {
+      cout << Server::compute(A, B) << endl;
+    } catch (std::bad_alloc& e) {
+      cout << "Not enough memory" << endl;
+    } catch (exception& e) {
+      cout << "Exception: " << e.what() << endl;
+    } catch (int e) {
+      cout << "Other Exception" << endl;
+    }
+  }
+  cout << Server::getLoad() << endl;
   return 0;
 }
