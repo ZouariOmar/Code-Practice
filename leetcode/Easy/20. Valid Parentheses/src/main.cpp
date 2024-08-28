@@ -15,7 +15,7 @@
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
   Solution sl;
-  string str = "(]";
+  string str = "[]{}()";
 
   //! Testing part
   cout << sl.isValid(str) << endl;
