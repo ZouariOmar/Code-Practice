@@ -3,37 +3,29 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      21-09-2024
- * @link      https://codeforces.com/problemset/problem/1328/A
+ * @date      23-09-2024
+ * @link      https://www.geeksforgeeks.org/problems/check-if-two-arrays-are-equal-or-not3847/1?page=1&sortBy=difficulty
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
-#ifndef __INC_HPP__
-#define __INC_HPP__
+#ifndef __INC_H__
+#define __INC_H__
 
 //? ----------------------------- INCLUDE PROTOTYPE DECLARATION PART -----------------------------
 
 // Include std libs
+#include <algorithm>
 #include <iostream>
+#include <vector>
 
 // Use the stander workspace
 using namespace std;
 
-//? ------------------------- STRUCT PROTOTYPE DECLARATION PART -----------------------------------
-
-typedef long long int lli;
-
 //? ------------------------- FUNCTIONS/CLASSES PROTOTYPE DECLARATION PART ------------------------
 
-void setup_io_test();
 class Solution {
- private:
-  size_t t;
-  pair<lli, lli> pr;
-
  public:
-  Solution();
-  void solve();
+  bool check(vector<int> &, vector<int> &);
 };
 
 #endif

@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      21-09-2024
- * @link      https://codeforces.com/problemset/problem/1328/A
+ * @date      22-09-2024
+ * @link      https://leetcode.com/problems/merge-sorted-array
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -18,13 +18,10 @@
  * @return int 
  */
 int main() {
-  //! Testing part
-  setup_io_test();
-
   //* principal vars declaration part
-  Solution sl;
+  // her...
 
-  sl.solve();
+  cout << "Hello World !" << endl;
 
   return 0;
 }

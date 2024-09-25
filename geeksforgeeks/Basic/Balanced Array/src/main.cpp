@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      21-09-2024
- * @link      https://codeforces.com/problemset/problem/1328/A
+ * @date      24-09-2024
+ * @link      https://www.geeksforgeeks.org/problems/balanced-array07200720/1?page=1&sortBy=difficulty
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -18,13 +18,11 @@
  * @return int 
  */
 int main() {
-  //! Testing part
-  setup_io_test();
-
   //* principal vars declaration part
   Solution sl;
+  vector<int> arr = {1, 2, 1, 2, 1, 3};
 
-  sl.solve();
+  cout << sl.minValueToBalance(arr) << endl;
 
   return 0;
 }

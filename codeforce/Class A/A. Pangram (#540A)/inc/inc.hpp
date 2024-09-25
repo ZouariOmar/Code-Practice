@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      21-09-2024
- * @link      https://codeforces.com/problemset/problem/1328/A
+ * @date      24-09-2024
+ * @link      https://codeforces.com/problemset/problem/520/A
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -15,25 +15,30 @@
 
 // Include std libs
 #include <iostream>
+#include <unordered_set>
 
 // Use the stander workspace
 using namespace std;
 
-//? ------------------------- STRUCT PROTOTYPE DECLARATION PART -----------------------------------
-
-typedef long long int lli;
-
 //? ------------------------- FUNCTIONS/CLASSES PROTOTYPE DECLARATION PART ------------------------
 
-void setup_io_test();
+/**
+ * ? Constraints
+ * * - 1 ≤ n ≤ 100
+ * * - A pangram is a sentence containing every letter in the English Alphabet.
+ */
+
+void boost();
+
 class Solution {
  private:
-  size_t t;
-  pair<lli, lli> pr;
+  size_t len;
+  unordered_set<char> st;
 
  public:
   Solution();
   void solve();
-};
+
+};  // Solution class
 
 #endif

@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      21-09-2024
- * @link      https://codeforces.com/problemset/problem/1328/A
+ * @date      23-09-2024
+ * @link      https://codeforces.com/problemset/problem/469/A
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -15,25 +15,32 @@
 
 // Include std libs
 #include <iostream>
+#include <set>
 
 // Use the stander workspace
 using namespace std;
 
-//? ------------------------- STRUCT PROTOTYPE DECLARATION PART -----------------------------------
-
-typedef long long int lli;
-
 //? ------------------------- FUNCTIONS/CLASSES PROTOTYPE DECLARATION PART ------------------------
 
-void setup_io_test();
+/**
+ * ? Constraints
+ * * 1 ≤  n ≤ 100
+ * * 0 ≤ p ≤ n
+ * * 1 ≤ ai ≤ n
+ */
+
+void boost();
+
 class Solution {
  private:
-  size_t t;
-  pair<lli, lli> pr;
+  set<int> st;
+  size_t target, p1, p2;
+  void insertToSet(int);
 
  public:
   Solution();
   void solve();
-};
+
+};  // Solution class
 
 #endif

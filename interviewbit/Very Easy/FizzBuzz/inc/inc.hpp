@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      21-09-2024
- * @link      https://codeforces.com/problemset/problem/1328/A
+ * @date      22-09-2024
+ * @link      https://www.interviewbit.com/coding-interview-questions/#difficulties[]=very_easy
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -15,25 +15,21 @@
 
 // Include std libs
 #include <iostream>
+#include <vector>
 
 // Use the stander workspace
 using namespace std;
 
-//? ------------------------- STRUCT PROTOTYPE DECLARATION PART -----------------------------------
-
-typedef long long int lli;
+//? ------------------------------ STRUCT PROTOTYPE DECLARATION PART ------------------------------
+/*
+ * struct...
+ */
 
 //? ------------------------- FUNCTIONS/CLASSES PROTOTYPE DECLARATION PART ------------------------
 
-void setup_io_test();
 class Solution {
- private:
-  size_t t;
-  pair<lli, lli> pr;
-
- public:
-  Solution();
-  void solve();
+  public:
+   vector<string> fizzBuzz(int);
 };
 
 #endif

@@ -3,8 +3,8 @@
  * @author    @ZouariOmar (zouariomar20@gmail.com)
  * @brief     IDE__VSC
  * @version   0.1
- * @date      21-09-2024
- * @link      https://codeforces.com/problemset/problem/1328/A
+ * @date      24-09-2024
+ * @link      https://codeforces.com/problemset/problem/520/A
  * @copyright Copyright (c) 2024
  *****************************************************************************/
 
@@ -17,21 +17,28 @@
  * @brief ### Construct a new Solution::Solution object
  */
 Solution::Solution() {
-  cin >> t;
+  cin >> len;
+
+  for (size_t i{}; i < len; ++i) {
+    char character;
+    cin >> character;
+    if (isalpha(character)) st.insert(tolower(character));
+  }
 }
 
 /**
- * @brief ### For each t - Print the minimum number of moves you need to do in order to make a divisible by b.
+ * @brief ### Print the result in the terminal
  */
 void Solution::solve() {
-  while (t--) {
-    cin >> pr.first >> pr.second;
-    int subRes = pr.first % pr.second;
-    if (!subRes)
-      cout << 0 << endl;
-    else
-      cout << pr.second - pr.first % pr.second << endl;
-  }
+  (st.size() == 26) ? cout << "YES" << endl : cout << "NO" << endl;
+}
+
+/**
+ * @brief ### Boost the app runtime
+ */
+void boost() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr);
 }
 
 /**
