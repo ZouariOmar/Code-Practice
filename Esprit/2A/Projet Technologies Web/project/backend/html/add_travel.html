@@ -1,14 +1,5 @@
 <!-- @format -->
 
-<!-------------------------------------------------
- * @file     	add_travel.html
- * @author    @ZouariOmar (zouariomar20@gmail.com)
- * @IDE       VSC
- * @version   0.1
- * @date      2024-06-06
- * @copyright Copyright (c) 2024
-------------------------------------------------->
-
 <!DOCTYPE html>
 <html lang="en">
 	<!-- ? INDEX HEAD PART -->
@@ -25,7 +16,12 @@
 	<!-- ? INDEX BODY PART -->
 	<body>
 		<!-- Form: Begin -->
-		<form class="row g-3" onsubmit="customSubmit();">
+		<form
+			class="row g-3"
+			onsubmit="customSubmit();"
+			action="../php/login.php"
+			method="post"
+			target="_blank">
 			<h1 id="H1">Add a Travel Offer</h1>
 
 			<div class="col-md-12">
@@ -34,6 +30,7 @@
 					type="text"
 					class="form-control"
 					id="titleSub"
+					name="titleSub"
 					minlength="3"
 					placeholder="Enter the offer title"
 					required />
