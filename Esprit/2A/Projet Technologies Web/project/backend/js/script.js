@@ -1,16 +1,8 @@
 /**
  * @format
- * @file script.js
- * @author @ZouariOmar (zouariomar20@gmail.com)
- * @IDE VSC
- * @version 0.1
- * @date 30-09-2024
- * @copyright Copyright (c) 2024
- */
-
-/**
  * @brief ### Submit the form
  */
+
 function customSubmit() {
 	var offer = {
 		title: document.getElementById("titleSub").value,
@@ -22,7 +14,25 @@ function customSubmit() {
 		availability: document.getElementById("availability").checked, // True or false
 	};
 
-	const offerJSON = JSON.stringify(offer);
-	confirm("Are you sure ?");
-	alert(offer.title);
+	if (is_valid(offer)) alert("Submission Successfully Added!");
+	else alert("Submission Failed!");
+}
+
+/**
+ * @brief ### Verifier if the form respect the criteria
+ */
+function is_valid(form) {
+	if (form.title.length < 3) {
+		alert("Pls, use at least 3 chars!");
+		return false;
+	}
+
+	const pattern = "[A-Za-zs]{3,}";
+
+	if (!pattern.test(form.destination)) {
+		alert("Pls, match the requested format!");
+		return false;
+	}
+
+	return true;
 }

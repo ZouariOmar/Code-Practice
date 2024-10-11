@@ -18,8 +18,7 @@
 		<!-- Form: Begin -->
 		<form
 			class="row g-3"
-			onsubmit="customSubmit();"
-			action="../php/login.php"
+			
 			method="post"
 			target="_blank">
 			<h1 id="H1">Add a Travel Offer</h1>
@@ -31,9 +30,7 @@
 					class="form-control"
 					id="titleSub"
 					name="titleSub"
-					minlength="3"
-					placeholder="Enter the offer title"
-					required />
+					placeholder="Enter the offer title" />
 			</div>
 
 			<div class="col-md-12">
@@ -42,9 +39,7 @@
 					type="text"
 					class="form-control"
 					id="destination"
-					pattern="[A-Za-z\s]{3,}"
-					placeholder="Enter the destination"
-					required />
+					placeholder="Enter the destination" />
 			</div>
 
 			<div class="col-md-6">
@@ -88,7 +83,7 @@
 			</div>
 
 			<div class="col-12">
-				<button type="submit" class="btn btn-primary">Add Offer</button>
+				<button type="submit" class="btn btn-primary" onclick="customSubmit();">Add Offer</button>
 			</div>
 		</form>
 		<!-- Form: End -->
