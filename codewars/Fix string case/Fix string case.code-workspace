@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"makefile.makefilePath": "makefile",
+		"files.associations": {
+			"*.embeddedhtml": "html",
+			"string_view": "cpp"
+		}
+	}
+}
