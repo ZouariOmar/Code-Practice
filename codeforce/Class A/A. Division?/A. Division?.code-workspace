@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"makefile.makefilePath": "makefile",
+		"files.associations": {
+			"*.embeddedhtml": "html",
+			"ostream": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}
