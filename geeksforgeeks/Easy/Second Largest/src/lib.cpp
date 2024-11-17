@@ -37,10 +37,9 @@ int Solution::print2largest(vector<int> &arr) {
     return -1;
   
   // Return the second  largest number in the array (100% exist)
-  for (int i = len - 2; i >= 0; i--) {
+  for (int i = len - 2; i >= 0; i--)
     if (arr[i] != arr[len - 1])
       return arr[i];
-  }
 
-  return EXIT_FAILURE;
+  return -1;
 }

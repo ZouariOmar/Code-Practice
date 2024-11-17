@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"makefile.makefilePath": "makefile",
+		"files.associations": {
+			"*.embeddedhtml": "html",
+			"iostream": "cpp"
+		},
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default",
+					"enableSsl": "Disabled"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3306,
+				"driver": "MySQL",
+				"name": "test",
+				"database": "test",
+				"username": "root"
+			}
+		]
+	}
+}
