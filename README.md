@@ -3925,7 +3925,7 @@ This repository contains my solutions to coding problems from various platforms.
 ```
 
 - `problems/easy/`: Solutions to easy problems.
-- `problems/medium/`: Solutions to medium problems.
+- `problems/medium/`: Solutions to medium problems.   
 - `problems/hard/`: Solutions to hard problems.
 
 Each subdirectory contains the solution files named according to the problem title or ID.
