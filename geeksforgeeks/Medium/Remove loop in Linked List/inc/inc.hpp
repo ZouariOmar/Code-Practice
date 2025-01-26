@@ -33,6 +33,6 @@ struct Node {  // Singly linked list structure declaration part
 class Solution {
  public:
   void removeLoop(Node *);
-};
+}; // Solution class
 
 #endif
