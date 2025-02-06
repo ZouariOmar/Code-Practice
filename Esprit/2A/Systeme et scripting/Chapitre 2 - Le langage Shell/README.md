@@ -170,22 +170,13 @@ function Last_Extraction() {
 # 6. Ecrire un programme Suppression qui permet de Supprimer la plus petite correspondance entre h et o à partir du début de la chaine helloworld.
 function Suppression() {
   s="helloWorld"
-  h_pos=$(expr index "$s" "h") # Position de 'h'
-  o_pos=$(expr index "$s" "o") # Position de 'o'
-  sub_s="${s:h_pos-1:o_pos-h_pos+1}"
-
-  echo "${s/$sub_s/}"
+  echo ${s#h*o}
 }
 
 # 7. Ecrire un programme Suppression qui permet de Supprimer la plus grande  correspondance entre h et o à partir du début de la chaine helloworld.
 function Suppression2() {
   s="helloWorld"
-  h_pos=$(expr index "$s" "h")         # Position de 'h'
-  o_pos=$(expr index "${s:h_pos}" "o") # Position de 'o' après 'h'
-  o_pos_abs=$((h_pos + o_pos - 1))
-  sub_s="${s:h_pos-1:o_pos_abs-h_pos+1}"
-
-  echo "${s/$sub_s/}"
+  echo ${s##h*o}
 }
 
 # 8. Ecrire un programme Remplacement qui permet de remplacer la première  correspondance de la sous chaine  world de la chaine helloworld avec esprit.
