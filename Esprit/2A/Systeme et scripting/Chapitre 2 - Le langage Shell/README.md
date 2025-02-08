@@ -20,7 +20,7 @@ afficheFormulaire
 
 ![s1](imgs/s1.png)
 
-1. Ecrire un programme copiedossier qui prend en argument deux noms des dossiers A et B et
+2. Ecrire un programme copiedossier qui prend en argument deux noms des dossiers A et B et
    qui permet de les créer et de copier l’un dans l’autre.
 
 ```sh
@@ -47,7 +47,7 @@ copiedossier $1 $2
 
 ![s2](imgs/s2.png)
 
-1. Ecrire un programme effacerFichier qui détruit le fichier ou dossier passés en paramètre,
+3. Ecrire un programme effacerFichier qui détruit le fichier ou dossier passés en paramètre,
    mais, avant de l’effacer, le programme demande une confirmation pour effacement.
 
 ```sh
@@ -76,8 +76,8 @@ effacerFichier $1
 
 ## B. Tableaux
 
-1. Ecrire un programme Etudiant qui permet de créer un tableau contient cette liste des noms
-   « ahmed, ali , mariem, soulaima, salim » et d’afficher le premier et le deuxième nom
+Ecrire un programme Etudiant qui permet de créer un tableau contient cette liste des noms
+« ahmed, ali , mariem, soulaima, salim » et d’afficher le premier et le deuxième nom
 
 ```sh
 #! /usr/bin/bash
