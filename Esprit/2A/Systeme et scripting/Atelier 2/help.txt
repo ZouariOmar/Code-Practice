@@ -1,0 +1,20 @@
+password.sh - Password Strength Validator
+
+Usage:
+    password.sh [-h] [-v] [-t] <password>
+
+Options:
+    -h  Display this detailed help message.
+    -v  Show the script version and author name.
+    -t  Test the strength of the provided password.
+
+Password validation criteria:
+    - Must be at least 8 characters long.
+    - Must include at least one digit (0-9).
+    - Must include at least one special character (@, #, $, %, &, *, +, -, =).
+    - Must not contain a sequence of 4 or more consecutive characters found in a dictionary.
+
+Examples:
+    ./password.sh -t MyPass@123
+    ./password.sh -h
+    ./password.sh -v

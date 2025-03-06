@@ -19,7 +19,7 @@
  * @param arr vector<int> &arr
  * @return vector<int>
  */
-vector<int> Solution::max_of_subarrays(int k, vector<int> &arr) {
+vector<int> Solution::maxOfSubarrays(vector<int> &arr, int k) {
   size_t n{arr.size()};
   priority_queue<pair<int, int>> pq;
   vector<int> ans;

@@ -25,6 +25,6 @@ using namespace std;
 
 class Solution {
  public:
-  vector<int> max_of_subarrays(int, vector<int> &);
+   vector<int> maxOfSubarrays(vector<int> &, int);
 };  // Solution class
 #endif
