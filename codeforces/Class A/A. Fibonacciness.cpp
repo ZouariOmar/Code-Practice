@@ -1,20 +1,23 @@
 /**
- * @file    B. Choosing Cubes.cpp
+ * @file    A. Fibonacciness.cpp
  * @author  @ZouariOmar (zouariomar20@gmail.com)
- * @brief   B. Choosing Cubes source file
+ * @brief   A. Fibonacciness source file
  * @version 0.1
- * @date    2025-05-21
+ * @date    2025-06-02
  * @copyright Copyright (c) 2025
- * @link https://codeforces.com/problemset/problem/1980/B codeforces @endlink
+ * @link https://codeforces.com/problemset/problem/2060/A codeforces @endlink
  */
 
 //? Include prototype declaration part
-#include <cstddef>
 #include <iostream>
 
 //? Function(s)/Class(es) prototype dev part
 class Solution {
+public:
   static void solve() {
+    unsigned short a1, a2, a4, a5;
+    std::cin >> a1 >> a2 >> a4 >> a5;
+    std::cout << 1 + (a1 + a2 == a4 - a2) + (a4 - a2 == a5 - a4 || a1 + a2 == a5 - a4) << '\n';
   }
 }; // Solution class
 
